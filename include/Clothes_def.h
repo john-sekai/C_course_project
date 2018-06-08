@@ -6,7 +6,7 @@ struct Clothes{
     char *brand;//服装品牌,0为unknown
     char *barcode;//条形码
     int size;//对应身高（单位cm）
-    //int storage_num;//库存量
+    int storage_num;//库存量
     //int sale_num;//已售出量
     float purchase_price;//进货价
     float presale;//预售价

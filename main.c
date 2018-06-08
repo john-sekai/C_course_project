@@ -4,6 +4,11 @@ int main()
 {
     //intialization of clothes_stats needed
     clothes_stats_init();
-    in("TShirt","UNIKLO","0X0001",175, 100.0, 130.0);
+    struct Clothes *clo;
+    clo = in("TSHIRT","UNIKLO","0X0001",175,20, 100.0, 130.0);
+    
+    // able to find a clothes with certain information
+    clo = get("TSHIRT","UNIKLO","0X0001",175);
+    
     return 0;
 }
